@@ -1,38 +1,283 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
   }
 }
+body{
+  background: #3e1e68;
+}
+.App {
+  text-align: center;
+  /* position: fixed; */
+  width: 100vw;
+  height: 100vh;
+  /* top: 0;
+  left: 0; */
+  
+  overflow: hidden;
+  /* margin: 0;
+  padding: 0; */
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App span {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 45;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 0;
+}
+
+.App span:nth-child(0) {
+  color: #ffacac;
+  top: 79%;
+  left: 43%;
+  animation-duration: 14s;
+  animation-delay: -44s;
+  transform-origin: 11vw 15vh;
+  box-shadow: 40vmin 0 5.042940432684055vmin currentColor;
+  z-index: 0;
+}
+.App span:nth-child(1) {
+  color: #ffacac;
+  top: 98%;
+  left: 74%;
+  animation-duration: 13s;
+  animation-delay: -39s;
+  transform-origin: 25vw -1vh;
+  box-shadow: 40vmin 0 5.750510246215956vmin currentColor;
+  z-index: 0;
+}
+.App span:nth-child(2) {
+  color: #e45a84;
+  top: 55%;
+  left: 56%;
+  animation-duration: 53s;
+  animation-delay: -36s;
+  transform-origin: 21vw 23vh;
+  box-shadow: -40vmin 0 5.342901855997631vmin currentColor;
+}
+.App span:nth-child(3) {
+  color: #ffacac;
+  top: 5%;
+  left: 20%;
+  animation-duration: 32s;
+  animation-delay: -47s;
+  transform-origin: 12vw -16vh;
+  box-shadow: 40vmin 0 5.918736992191469vmin currentColor;
+  z-index: 0;
+}
+.App span:nth-child(4) {
+  color: #ffacac;
+  top: 86%;
+  left: 66%;
+  animation-duration: 34s;
+  animation-delay: -42s;
+  transform-origin: -9vw -6vh;
+  box-shadow: -40vmin 0 5.806105359188973vmin currentColor;
+  z-index: 0;
+}
+.App span:nth-child(5) {
+  color: #583c87;
+  top: 93%;
+  left: 12%;
+  animation-duration: 28s;
+  animation-delay: -19s;
+  transform-origin: -19vw 0vh;
+  box-shadow: -40vmin 0 5.9015126854470825vmin currentColor;
+  z-index: 0;
+}
+.App span:nth-child(6) {
+  color: #e45a84;
+  top: 15%;
+  left: 40%;
+  animation-duration: 32s;
+  animation-delay: -7s;
+  transform-origin: 19vw 5vh;
+  box-shadow: -40vmin 0 5.841142968564168vmin currentColor;
+  z-index: 0;
+}
+.App span:nth-child(7) {
+  color: #583c87;
+  top: 65%;
+  left: 53%;
+  animation-duration: 38s;
+  animation-delay: -21s;
+  transform-origin: -10vw 12vh;
+  box-shadow: 40vmin 0 5.770233536536939vmin currentColor;
+  z-index: 0;
+}
+.App span:nth-child(8) {
+  color: #ffacac;
+  top: 47%;
+  left: 55%;
+  animation-duration: 32s;
+  animation-delay: -39s;
+  transform-origin: 14vw 16vh;
+  box-shadow: -40vmin 0 5.804931018165785vmin currentColor;
+}
+.App span:nth-child(9) {
+  color: #ffacac;
+  top: 79%;
+  left: 4%;
+  animation-duration: 50s;
+  animation-delay: -44s;
+  transform-origin: 10vw 24vh;
+  box-shadow: -40vmin 0 5.23698180500468vmin currentColor;
+}
+.App span:nth-child(10) {
+  color: #583c87;
+  top: 13%;
+  left: 50%;
+  animation-duration: 8s;
+  animation-delay: -50s;
+  transform-origin: -12vw 24vh;
+  box-shadow: 40vmin 0 5.059404698754369vmin currentColor;
+}
+.App span:nth-child(11) {
+  color: #ffacac;
+  top: 85%;
+  left: 1%;
+  animation-duration: 51s;
+  animation-delay: -50s;
+  transform-origin: -16vw -11vh;
+  box-shadow: 40vmin 0 5.037461804663744vmin currentColor;
+}
+.App span:nth-child(12) {
+  color: #583c87;
+  top: 21%;
+  left: 56%;
+  animation-duration: 20s;
+  animation-delay: -3s;
+  transform-origin: 17vw -11vh;
+  box-shadow: -40vmin 0 5.492821922053023vmin currentColor;
+}
+.App span:nth-child(13) {
+  color: #583c87;
+  top: 71%;
+  left: 73%;
+  animation-duration: 24s;
+  animation-delay: -19s;
+  transform-origin: -7vw 21vh;
+  box-shadow: -40vmin 0 5.211930934907641vmin currentColor;
+}
+.App span:nth-child(14) {
+  color: #ffacac;
+  top: 5%;
+  left: 12%;
+  animation-duration: 14s;
+  animation-delay: -31s;
+  transform-origin: -4vw -16vh;
+  box-shadow: -40vmin 0 5.28974998474223vmin currentColor;
+}
+.App span:nth-child(15) {
+  color: #ffacac;
+  top: 76%;
+  left: 10%;
+  animation-duration: 31s;
+  animation-delay: -49s;
+  transform-origin: -15vw -20vh;
+  box-shadow: -40vmin 0 5.221530809194948vmin currentColor;
+}
+.App span:nth-child(16) {
+  color: #e45a84;
+  top: 3%;
+  left: 40%;
+  animation-duration: 41s;
+  animation-delay: -10s;
+  transform-origin: 12vw -15vh;
+  box-shadow: 40vmin 0 5.648586892705754vmin currentColor;
+}
+.App span:nth-child(17) {
+  color: #e45a84;
+  top: 100%;
+  left: 44%;
+  animation-duration: 32s;
+  animation-delay: -32s;
+  transform-origin: -1vw 18vh;
+  box-shadow: 40vmin 0 5.018837053188339vmin currentColor;
+}
+.App span:nth-child(18) {
+  color: #e45a84;
+  top: 27%;
+  left: 72%;
+  animation-duration: 17s;
+  animation-delay: -14s;
+  transform-origin: 25vw -23vh;
+  box-shadow: -40vmin 0 5.123598087518342vmin currentColor;
+}
+/* .App span:nth-child(19) {
+  color: #FFACAC;
+  top: 64%;
+  left: 62%;
+  animation-duration: 37s;
+  animation-delay: -38s;
+  transform-origin: 9vw 0vh;
+  box-shadow: -40vmin 0 5.860722548793496vmin currentColor;
+} */
+
+/* navbar */
+.navbar-div {
+  width: 100vw;
+  height: 100px;
+  background-color: #e45a84;
+  position: relative;
+  z-index: 2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ h1{
+  font-size: 40px;
+  padding-top: 20px;
+}
+/* giphy display */
+
+.giphy-display {
+  max-width: 500px;
+  max-height: auto;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+}
+.giphy-display > img {
+  z-index: 2;
+  border-radius: .5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* giphy form */
+.giphy-form {
+  margin-top: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.giphy-form-label {
+  display: block;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.text-input{
+  padding: 1%;
+  border: 2px solid #e45a84;
+  border-radius: .5rem;
+  width: 300px;
+}
+.submit-button{
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: greenyellow;
+  border-radius: .5rem;
+  border: none;
+}
+
+.submit-button:hover{
+ background-color: #e45a84;
+ color: white;
+ border: 2px solid white;
 }
